@@ -1,11 +1,26 @@
+import javax.swing.*;
+
 public class Runner {
     public Runner(){
         VirtualPet v = new VirtualPet();
         v.exercise();
         takeABeat(1000);
         v.feed();
-        String ans = getAnswer("How are you");
-        if (ans.equalsIgnoreCase)
+        takeABeat(1000);
+        String ans = getAnswer("How are you?");
+        if(ans.equals("Great")){
+            v.face.setMessage("Great!");
+        }
+    }
+
+    public String getAnswer(String q){
+        String s = (String)JOptionPane.showInputDialog(
+            new JFrame(),
+            q,
+            "Get a Response",
+            JOptionPane.PLAIN_MESSAGE
+        );
+        return s;
     }
 
     public void takeABeat(int milliseconds){
