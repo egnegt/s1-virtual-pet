@@ -29,6 +29,10 @@ public class VirtualPet {
         hunger = hunger + 3;
         face.setMessage("1, 2, 3, jump.  Whew.");
         face.setImage("tired");
+        if (hunger >= 10){
+            face.setImage("skeleton");
+            face.setMessage("I'm dead");
+        }
     }
     
     public void sleep() {

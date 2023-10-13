@@ -5,12 +5,16 @@ public class Runner {
         VirtualPet v = new VirtualPet();
         v.exercise();
         takeABeat(1000);
-        v.feed();
-        takeABeat(1000);
         String ans = getAnswer("How are you?");
         if(ans.equals("Great")){
             v.face.setMessage("Great!");
         }
+        v.exercise();
+        takeABeat(1000);
+        v.exercise();
+        takeABeat(1000);
+        v.exercise();
+        takeABeat(1000);
     }
 
     public String getAnswer(String q){
