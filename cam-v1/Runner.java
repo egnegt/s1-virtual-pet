@@ -16,6 +16,8 @@ public class Runner {
         v.exercise();
         takeABeat(1000);
     }
+//jeremy was here
+
 
     public String getAnswer(String q){
         String s = (String)JOptionPane.showInputDialog(
