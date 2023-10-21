@@ -3,18 +3,26 @@ import javax.swing.*;
 public class Runner {
     public Runner(){
         VirtualPet v = new VirtualPet();
-        v.exercise();
-        takeABeat(1000);
-        String ans = getAnswer("How are you?");
-        if(ans.equals("Great")){
-            v.face.setMessage("Great!");
-        }
-        v.exercise();
-        takeABeat(1000);
-        v.exercise();
-        takeABeat(1000);
-        v.exercise();
-        takeABeat(1000);
+        v.face.setMessage("Let's apply for college!");
+        takeABeat(5000);
+        v.doExtra();
+        takeABeat(5000);
+        v.doSat();
+        takeABeat(5000);
+        v.doSat();
+        takeABeat(5000);
+        v.doClasses();
+        takeABeat(5000);
+        v.doClasses();
+        takeABeat(5000);
+        v.doExtra();
+        takeABeat(5000);
+        v.doExtra();
+        takeABeat(5000);
+        v.apply();
+
+
+
     }
 //jeremy was here
 
